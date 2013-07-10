@@ -1,0 +1,11 @@
+# Rewriting
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.*$ /sqlrestup/index.php
+
+# Authentication
+#AuthName "Log in"
+#AuthType Basic
+#AuthUserFile "path/to/.htpasswd"
+#Require valid-user
